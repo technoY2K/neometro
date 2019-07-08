@@ -12,11 +12,21 @@
     "type": "git",
     "url": "git+https://github.com/jhamPac/neometro.git"
   },
-  "keywords": ["neocities, cli"],
+  "keywords": [
+    "neocities, cli"
+  ],
   "author": "jhamPac",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/jhamPac/neometro/issues"
   },
-  "homepage": "https://github.com/jhamPac/neometro#readme"
+  "homepage": "https://github.com/jhamPac/neometro#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "acorn": "^6.2.0",
+    "rollup": "^1.16.6",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-terser": "^5.1.1"
+  }
 }
