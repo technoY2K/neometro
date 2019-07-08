@@ -1,0 +1,22 @@
+{
+  "name": "neometro",
+  "version": "1.0.0",
+  "description": "Node cli for https://neocities.org",
+  "bin": {
+    "neometro": "bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhamPac/neometro.git"
+  },
+  "keywords": ["neocities, cli"],
+  "author": "jhamPac",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/jhamPac/neometro/issues"
+  },
+  "homepage": "https://github.com/jhamPac/neometro#readme"
+}
