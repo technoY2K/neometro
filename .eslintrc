@@ -1,0 +1,18 @@
+{
+  "env": {
+    "es6": true,
+    "browser": false
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [],
+  "rules": {
+    "semi": ["error", "never"],
+    "no-console": 2,
+    "no-unused-vars": ["error", { "argsIgnorePattern": "(array|error|index|result)" }]
+  }
+}
