@@ -1,6 +1,7 @@
 import babel from 'rollup-plugin-babel'
 import {terser} from 'rollup-plugin-terser'
-import resolve from 'rollup-plugin-node-resolve';
+import resolve from 'rollup-plugin-node-resolve'
+import hashbang from 'rollup-plugin-hashbang'
 
 export default {
   input: 'src/index.js',
@@ -14,6 +15,7 @@ export default {
       exclude: 'node_modules/**'
     }),
     terser(),
-    resolve()
+    resolve(),
+    hashbang()
   ]
 }

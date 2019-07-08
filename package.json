@@ -6,6 +6,7 @@
     "neometro": "bin/cli.js"
   },
   "scripts": {
+    "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,7 +28,9 @@
     "acorn": "^6.2.0",
     "rollup": "^1.16.6",
     "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-hashbang": "^2.2.2",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-terser": "^5.1.1"
-  }
+  },
+  "dependencies": {}
 }
