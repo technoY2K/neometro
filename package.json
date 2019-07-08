@@ -5,6 +5,7 @@
   "bin": {
     "neometro": "bin/cli.js"
   },
+  "preferGlobal": true,
   "scripts": {
     "build": "rollup -c",
     "pretty": "prettier --write ./src/**/*.js",
@@ -37,5 +38,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-terser": "^5.1.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "yargs": "^13.2.4"
+  }
 }
