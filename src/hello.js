@@ -1,3 +1,5 @@
+const chalk = require('chalk')
+
 export default {
   builder(yargs) {
     return yargs.positional('name', {
@@ -7,6 +9,6 @@ export default {
     })
   },
   handler(argv) {
-    console.log('hello', argv.name, 'welcome to neometro a cli for neocities!')
+    console.log(chalk.red('hello world'))
   },
 }

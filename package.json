@@ -39,6 +39,7 @@
     "rollup-plugin-terser": "^5.1.1"
   },
   "dependencies": {
+    "chalk": "^2.4.2",
     "yargs": "^13.2.4"
   }
 }
