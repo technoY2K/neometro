@@ -11,7 +11,7 @@ export default {
     })
   },
   async handler(argv) {
-    console.log(chalk.yellow('Fetching your data!'))
+    console.log(chalk.yellow('fetching your data...'))
     const config = {
       method: 'get',
       url: 'https://@neocities.org/api/list',
@@ -22,6 +22,7 @@ export default {
     }
 
     const result = await axios.request(config)
-    console.log(result.data, 'the result')
+    const filesTodisplay = result.data.files.map(file => file.path)
+    filesTodisplay.forEach(path => console.log(chalk.green(path)))
   },
 }
