@@ -1,5 +1,6 @@
 const chalk = require('chalk')
 const axios = require('axios')
+import auth from './auth'
 require('dotenv').config()
 
 export default {
@@ -16,8 +17,8 @@ export default {
       method: 'get',
       url: 'https://@neocities.org/api/list',
       auth: {
-        username: `${process.env.SITE}`,
-        password: `${process.env.PASSWORD}`
+        username: `${auth.get('siteName')}`,
+        password: `${auth.get('password')}`
       }
     }
 
