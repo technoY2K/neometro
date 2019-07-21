@@ -18,12 +18,21 @@ export default {
       url: 'https://@neocities.org/api/list',
       auth: {
         username: `${auth.get('siteName')}`,
-        password: `${auth.get('password')}`
-      }
+        password: `${auth.get('password')}`,
+      },
     }
 
-    const result = await axios.request(config)
-    const filesTodisplay = result.data.files.map(file => file.path)
-    filesTodisplay.forEach(path => console.log(chalk.green(path)))
+    try {
+      const result = await axios.request(config)
+      const filesTodisplay = result.data.files.map(file => file.path)
+      filesTodisplay.forEach(path => console.log(chalk.green(path)))
+    } catch (error) {
+      if (error.response.data.error_type === 'invalid_auth') {
+        console.log(chalk.red(error.response.data.message))
+        console.log(chalk.red('Please try the command neometro auth to re-enter your credentials'))
+      } else {
+        console.log(chalk.red(error.response.data.message))
+      }
+    }
   },
 }

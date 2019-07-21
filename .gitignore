@@ -94,5 +94,6 @@ typings/
 
 # library
 bin
+playground
 
 # End of https://www.gitignore.io/api/node
