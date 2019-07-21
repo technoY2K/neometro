@@ -8,8 +8,8 @@
   "preferGlobal": true,
   "scripts": {
     "build": "rollup -c",
-    "build:single": "rollup --config ./playground/rollup.config.dev.js",
-    "sandbox": "node ./playground/index.js",
+    "build:sandbox": "rollup --config ./sandbox/rollup.config.dev.js",
+    "sandbox": "node ./sandbox/exec.js",
     "pretty": "prettier --write ./src/**/*.js",
     "test": "jest"
   },
